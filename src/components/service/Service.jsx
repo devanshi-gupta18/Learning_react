@@ -3,7 +3,7 @@ import './service.css'
 const Service = () =>{
     return(
         <>
-        <h1>Service</h1>
+        {/* <h1></h1> */}
         </>
     )
 };
