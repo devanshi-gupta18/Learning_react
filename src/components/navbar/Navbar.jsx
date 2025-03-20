@@ -1,9 +1,20 @@
 import './navbar.css'
+import logo from '../../assests/logo.png';
 
 const Navbar = () =>{
     return(
         <>
-        <h1>Navbar</h1>
+        <div className="top-nav">
+            topnav
+        </div>
+        <div className="bottom-nav">
+            <div className="logo">
+                <img src={logo} alt="" />
+            </div>
+            <div className="nav-links">
+
+            </div>
+        </div>
         </>
     )
 };
