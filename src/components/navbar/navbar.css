@@ -3,41 +3,45 @@
     padding: 0;
 }
 
-:root{
-    --nav-color: #444444;
-    --default-color: #444444;
-    --heading-color: #555555;
-    --accent-color: #3fbbc0;
-    --surface-color: #ffffff;
-
-    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --heading-font: "Raleway", sans-serif;
-    --nav-font: "Poppins", sans-serif;
-}
-
-.common-padding{
-    padding: 0px 50px;
+.navbar{
+    position: sticky;
+    top: 0;
+    font-family: var(--default-font);
+    z-index:1000;
 }
 
 .top-nav{
-    font-family: var(--nav-font);
+    font-weight: 400;
     background: var(--accent-color);
     color: var(--surface-color);
-    height: 25px;
-    padding-top: 10px;
+    height: 30px;
+    padding-top: 8px;
+    padding-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-icon{
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: -2px;
+    font-size: 18px;
 }
 
 .bottom-nav{
-    font-family: var(--nav-font);
     padding-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--nav-color);
+    padding-bottom: 10px;
+    background: var(--surface-color);
 }
 
 .bottom-nav .logo{
     display: flex;
-    height: 40px;
+    height: 36px;
+    margin-right: 8px;
 }
 
 .bottom-nav .nav-links{
@@ -47,22 +51,20 @@
 }
 
 .nav-links ul{
+    margin-left: 10px;
     display: flex;
     gap: 20px;
+    align-items: center;
+    list-style: none;
 }
 
 .nav-links ul li{
+    text-transform: uppercase;
     font-family: var(--nav-font);  
     display: flex;
     align-items: center;
-    /* gap: 100px; */
-}
-
-.btn{
-    color: var(--surface-color);
-    background: var(--accent-color);
-    border: transparent;
-    font-size: 14px;
-    border-radius: 5px;
-    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 500;
+    justify-content: space-between;
+    padding: 18px 8px;
 }

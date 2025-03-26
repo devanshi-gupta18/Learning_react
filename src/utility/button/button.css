@@ -1,0 +1,11 @@
+
+button {
+    text-decoration: none;
+    color: var(--surface-color);
+    background: var(--accent-color);
+    border: transparent;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 10px 22px;
+    margin: 0px 5px 0px 5px;
+}
